@@ -1,29 +1,55 @@
 @media screen and (min-width: 428px) {
   .container {
-    max-width: 428px;
+   max-width: 428px;
   }
+
+  .hero {
+    
+    background-image: var(--br-hero), url(../images/herophoto-tab.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--br-hero), url(../images/herophoto-tab-2x.jpg);
+  }
+  
 }
 @media screen and (max-width: 767px) {
   .hero-item {
     text-transform: capitalize;
   }
-  .about-title>.about-us {
+ /*.about-title>.about-us {
     text-align: center;
-  }
+  }*/
+  .about-main-text {
+    text-align: center;
+ }
+
+}
+@media screen and (max-width: 1157px){
+    .about-link {
+    display: none;
+    } 
 }
 /*/--TAB--*/
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
   /*/----HERO-----*/
   .hero {
-   /* padding-top: 112px;
-    padding-bottom: 112px;*/
     max-width: 768px;
     background-image: var(--br-hero), url(../images/herophoto.jpg);
     margin: 0 auto;
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--br-hero), url(../images/herophoto-2x.jpg);;
+  }
+}
   .hero-item {
     font-weight: 700;
     font-size: 56px;
@@ -32,13 +58,13 @@
     max-width: 496px;
   }
   /*/--ABOUT--*/
-  .about-us {
-    flex-basis: 100%;
+  /*.about-us {
+    flex-basis: 100%;*/
   }
   .about-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
   .about-main-text {
     flex-basis: calc((100% - 24px) / 2);
@@ -47,14 +73,14 @@
     width: 356px;
   }
   .about-link {
-    display: none;
+  display: none;
   }
 
   /*/--WHAT--*/
-  .what-title {
+  /*.what-title {
     display: none;
-  }
-  .what-list {
+  }*/
+  .what {
     display: none;
   }
 
@@ -67,7 +93,8 @@
     padding: 96px 108px 96px 108px;
   }
   .team-list {
-    display: flex;
+    /*display: flex;*/
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
   }
@@ -90,8 +117,8 @@
 /*/--DESK--*/
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
-    padding: 0 15px;
+    max-width: 1158px;
+   padding: 0 15px;
   }
   /*/----HERO-----*/
 
@@ -106,6 +133,13 @@
     padding-bottom: 188px;
     max-width: 1440px;
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--br-hero), url(../images/herophoto-2x.jpg);;
+  }
+}
   .hero-item {
     font-weight: 700;
     font-size: 56px;
@@ -131,26 +165,30 @@
     overflow: hidden;
   }
   .about-list {
-    display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
-    justify-content: center;
+    /*justify-content: center;*/
   }
   .about-main-text {
-    width: calc((100% - 72) / 4);
+    width: calc((100% - 72px) / 4);
   }
   .about-link {
-    width: 264px;
+   display: block;
+   width: 264px;
     height: 112px;
     border-radius: 4px;
-    display: inline-block;
     margin-bottom: 8px;
     background-color: #f4f4fd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
   }
   .about-item-icon {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+        
   }
+  
   .about-title {
     font-weight: 500;
     font-size: 20px;
@@ -172,6 +210,7 @@
 
   /*/--WHAT--*/
   .what {
+    display: block;
     padding-bottom: 120px;
   }
   .what-title {
@@ -186,22 +225,25 @@
   }
   .what-list {
     display: flex;
+    /*flex-wrap: nowrap;*/
+    gap: 24px;
   }
   .what-photo {
     width: calc((100% - 48px) / 3);
   }
   /*/--TEAM--*/
+  .team > .container {
+    width: 1158px;
+  }
   .team {
-    flex-basis: 100%;
+   /*flex-basis: 100%;*/
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: var(--milk-title-color);
+
   }
-  .team > .container {
-    max-width: 1158px;
-  }
+  
   .team-list {
-    display: flex;
+   flex-wrap: nowrap;
     gap: 24px;
   }
   .team-personal {
