@@ -25,6 +25,17 @@
   .about-main-text {
     text-align: center;
  }
+ .footer-logo {
+    justify-content: center;
+ }
+ .footer-soc-name {
+    justify-content: center;
+    text-align: center;
+ }
+ .footer-user-title{
+    justify-content: center;
+    text-align: center; 
+ }
 
 }
 @media screen and (max-width: 1157px){
@@ -90,7 +101,8 @@
     background-color: var(--milk-title-color);
   }
   .team {
-    padding: 96px 108px 96px 108px;
+   padding-top: 96px;
+   padding-bottom: 96px;
   }
   .team-list {
     /*display: flex;*/
@@ -107,12 +119,21 @@
     padding-bottom: 96px;
   }
   .customers-list {
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    
   }
   .customers-item {
-    width: 168px;
+    max-width: 168px;
     flex-basis: calc((100% - 48px) / 3);
   }
+  .footer > .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .email-footer {
+    width: 264px;
+}
 }
 /*/--DESK--*/
 @media screen and (min-width: 1158px) {
@@ -167,27 +188,23 @@
   .about-list {
     flex-wrap: nowrap;
     gap: 24px;
-    /*justify-content: center;*/
+    
   }
   .about-main-text {
     width: calc((100% - 72px) / 4);
   }
   .about-link {
-   display: block;
+   /*display: block;*/
+   display: flex;
    width: 264px;
     height: 112px;
     border-radius: 4px;
     margin-bottom: 8px;
     background-color: #f4f4fd;
-    /*align-items: center;
-    justify-content: center;*/
-  }
-  .about-item-icon {
-    display:flex;
-    justify-content: center;
     align-items: center;
-        
+    justify-content: center;
   }
+ 
   
   .about-title {
     font-weight: 500;
@@ -263,4 +280,29 @@
   .customers-item > .container {
     width: 1158px;
   }
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+    .footer>.container{
+    display: flex;
+ justify-content: space-between;
+    }
+/*.footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+   
+  }*/
+  .footer-main {
+    margin-right: 120px;
+  }
+  .footer-user {
+    width: 453px;
+    height: 80px;
+    margin-left: 80px;
+  
+  }
+  .email-footer {
+    width: 264px;
+}
 }
