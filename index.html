@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-   <!-- <header class="header">
+     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo link"
@@ -55,11 +55,84 @@
             </li>
           </ul>
         </address>
+        
+        <button class="menu-open-bt"data-menu-open>
+            <svg type="button" class="menu-open" width="32" height="22">
+            <use href="./images/icons.svg#icon-menuopen"></use>
+          </svg> 
+        </button>
       </div>
-    </header>-->
+      <div class="mob-menu"data-menu >
+        <button type="button" class="button-mob-close"data-menu-close>
+          <svg class="button-icon" width="8" height="8" >
+            <use href="./images/icons.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+        <div
+        <nav>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a href="./index.html" class="mob-menu-link link">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="./portfolio.html" class="mob-menu-link link">Portfolio </a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+        <address class="mob-menu-address">
+          <ul class="mob-menu-list list">
+            <li>
+              <a class="mob-menu-contact link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a class="mob-menu-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+            
+          </ul>
+        </address>
+        <ul class="mob-soc-list list">
+          <li class="mob-soc-item">
+            <a class="mob-soc-link link" href="">
+              <svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link link" href="">
+              <svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link link" href="">
+              <svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link link" href="">
+              <svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin2"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </header>
     <main>
       <!--Hero-->
-       <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-item">Effective Solutions for Your Business</h1>
           <button type="button" data-modal-open class="hero-btn">
@@ -123,23 +196,52 @@
           </ul>
         </div>
       </section>
-       <!--What are we doing-->
+      <!--What are we doing-->
       <section class="what">
         <div class="container">
           <h2 class="what-title">What are we doing</h2>
           <ul class="what-list list">
             <li class="what-photo">
-              <img src="./images/comp.jpg" alt="comp" width="360" />
+              <picture>
+                <source
+                  srcset="./images/comp.jpg 1x, ./images/comp-2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/comp.jpg"
+                  alt="comp"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="what-photo">
-              <img src="./images/phones.jpg" alt="phones" width="360" />
+              <picture>
+                <source
+                  srcset="./images/phones.jpg 1x, ./images/phones-2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/phones.jpg"
+                  alt="comp"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="what-photo">
-              <img
-                src="./images/laptop.jpg"
-                alt="phone and laptop"
-                width="360"
-              />
+              <picture>
+                <source
+                  srcset="./images/laptop.jpg 1x, ./images/laptop-2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/laptop.jpg"
+                  alt="comp"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -150,7 +252,37 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-personal">
-              <img src="./images/photomark.jpg" alt="Photo Mark" width="264" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photomark.jpg    1x,
+                    ./images/photomark-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/photomark-tab-1x.jpg 1x,
+                    ./images/photomark-tab-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photomark-mob-1x.jpg 1x,
+                    ./images/photomark-mob-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 428px)"
+                />
+                <img
+                  src="./images/photomark.jpg"
+                  alt=" Photo Mark"
+                  width="264"
+                />
+              </picture>
               <div class="team-main-text">
                 <h3 class="team-item">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -187,7 +319,30 @@
               </div>
             </li>
             <li class="team-personal">
-              <img src="./images/phototom.jpg" alt="Photo Tom" width="264" />
+              <picture>
+                <source
+                  srcset="./images/phototom.jpg 1x, ./images/phototom-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/phototom-tab-1x.jpg 1x,
+                    ./images/phototom-tab-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/phototom-mob-1x.jpg 1x,
+                    ./images/phototom-mob-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 428px)"
+                />
+                <img src="./images/phototom.jpg" alt=" Photo Tom" width="264" />
+              </picture>
               <div class="team-main-text">
                 <h3 class="team-item">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -224,11 +379,37 @@
               </div>
             </li>
             <li class="team-personal">
-              <img
-                src="./images/photocamila.jpg"
-                alt="Photo Camila"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photocamila.jpg    1x,
+                    ./images/photocamila-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/photocamila-tab-1x.jpg 1x,
+                    ./images/photocamila-tab-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photocamila-mob-1x.jpg 1x,
+                    ./images/photocamila-mob-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 428px)"
+                />
+                <img
+                  src="./images/photocamila.jpg"
+                  alt=" Photo Camila"
+                  width="264"
+                />
+              </picture>
               <div class="team-main-text">
                 <h3 class="team-item">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -265,11 +446,37 @@
               </div>
             </li>
             <li class="team-personal">
-              <img
-                src="./images/photodaniel.jpg"
-                alt="Photo Daniel"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photodaniel.jpg    1x,
+                    ./images/photodaniel-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/photodaniel-tab-1x.jpg 1x,
+                    ./images/photodaniel-tab-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photodaniel-mob-1x.jpg 1x,
+                    ./images/photodaniel-mob-2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 428px)"
+                />
+                <img
+                  src="./images/photodaniel.jpg"
+                  alt=" Photo Daniel"
+                  width="264"
+                />
+              </picture>
               <div class="team-main-text">
                 <h3 class="team-item">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -361,7 +568,7 @@
         </div>
       </section>
     </main>
-     <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-main">
           <a class="footer-logo link" href="./index.html">
@@ -510,5 +717,6 @@
       </div>
     </div>
     <script src="js/modal.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
