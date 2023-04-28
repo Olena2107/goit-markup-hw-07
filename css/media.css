@@ -2,7 +2,14 @@
   .container {
     max-width: 428px;
   }
-
+  .mob-menu-contact {
+      font-size: 26px;
+    line-height: calc(40px / 26px);
+  } 
+  .mob-soc-list {
+    gap: 56px;
+  }
+  
   .hero {
     background-image: var(--br-hero), url(../images/herophoto-tab.jpg);
   }

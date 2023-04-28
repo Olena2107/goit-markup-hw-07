@@ -184,13 +184,25 @@ ul {
   margin-top: 40px;
 }
 
+.mob-menu-link-s {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40px / 36px);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--ocean-bgc-hover-focus-active-color);
+}
+
+.mob-ad-tel{
+  margin-bottom: 40px;
+}
 .mob-menu-link {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(40px / 36px);
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color:var(--background-color) #2e2f42;
 }
 
 .mob-menu-ad-list {
@@ -199,13 +211,13 @@ ul {
 }
 .mob-menu-contact {
   font-weight: 700;
-  font-size: 36px;
-  line-height: calc(40px / 36px);
+  font-size: 26px;
+  line-height: calc(40px / 26px);
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #4d5ae5;
   cursor: pointer;
-  margin-bottom: 40px;
+  
 }
 .mob-menu-mail {
   font-weight: 500;
@@ -219,7 +231,7 @@ ul {
 .mob-soc-list {
   display: flex;
   margin-top: 48px;
-  gap: 56px;
+  gap: 24px;
 }
 .mob-soc-item {
   width: 40px;
@@ -964,7 +976,7 @@ ul {
   display: inline-flex;
   align-items: center;
 }
-.check-text span {
+.check-text .checkbox {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -975,12 +987,12 @@ ul {
   justify-content: center;
   fill: transparent;
 }
-.input-check:checked + .check-text span {
+.input-check:checked + .check-text .checkbox {
   background-color: #404bbf;
   border: none;
   fill: var(--second-title-color);
 }
-.input-check:focus + .check-text span {
+.input-check:focus + .check-text .checkbox {
   border-color: #4d5ae5;
 }
 .input-privacy {
