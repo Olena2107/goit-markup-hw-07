@@ -126,15 +126,15 @@ ul {
   transition: color var(--typical-transform);
 }
 .menu-open-bt {
-  background-color: #ffffff;
-  border-color: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  background-color: transparent;
+  border:none;
+  
 }
 .menu-open {
   align-items: center;
   justify-content: center;
-  fill: #2e2f42;
+  width: 32px;
+  height: 22px;
 }
 .mob-menu {
   padding: 24px 24px 40px 40px;
@@ -171,10 +171,11 @@ ul {
   background-color: var(--ocean-bgc-hover-focus-active-color);
 }
 .button-icon {
+  fill: #2e2f42;
 }
 .mob-menu-list {
   margin-top: 32px;
- /* margin-bottom: 284px;*/
+ 
 }
 .mob-menu-item :not(:last-child) {
   margin-bottom: 40px;
@@ -192,11 +193,9 @@ ul {
   color: #2e2f42;
 }
 
-.mob-menu-address {
-  gap: 40px;
-}
-.mob-menu-list {
- 
+.mob-menu-ad-list {
+  margin-top: 40px;
+ margin-bottom: 40px;
 }
 .mob-menu-contact {
   font-weight: 700;
@@ -219,6 +218,7 @@ ul {
 }
 .mob-soc-list {
   display: flex;
+  margin-top: 48px;
   gap: 56px;
 }
 .mob-soc-item {
@@ -239,11 +239,7 @@ ul {
   fill: var(--second-title-color);
 }
 
-.header-list,
-.header-item,
-.header-link,
-.header-address,
-.header-contact {
+.header-list,.header-list-ad {
   display: none;
 }
 
@@ -321,7 +317,7 @@ ul {
 
 /*/--ABOUT--*/
 .about-us {
-  padding: 96px 16px 96px 16px;
+  padding: 96px 0px 96px 0px;
 }
 .about-us-main {
   position: absolute;
@@ -346,6 +342,8 @@ ul {
 }
 
 .about-title {
+ justify-content: center;
+  text-align: center; 
   font-weight: 700;
   font-size: 36px;
   line-height: calc(40px / 36px);
@@ -353,8 +351,7 @@ ul {
   color: var(--main-title-color);
   cursor: pointer;
   margin-bottom: 8px;
-  justify-content: center;
-  text-align: center;
+  
 }
 .about-text {
   font-weight: 500;
@@ -402,8 +399,8 @@ ul {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 72px;
+  
+  row-gap: 72px;
   justify-content: center;
 }
 .team-main-text {
@@ -527,6 +524,7 @@ ul {
 }
 .footer-main {
   margin-bottom: 72px;
+  text-align: center;
 }
 /*.footer-container {
   display: flex;
@@ -570,6 +568,7 @@ ul {
   color: #f4f4fd;
   cursor: pointer;
   width: 264px;
+  text-align: left;
 }
 .container-footer-list {
   margin-bottom: 72px;
@@ -642,7 +641,7 @@ ul {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2e2f42;
-  margin-right: 24px;
+  /*margin-right: 24px;*/
   padding-left: 16px;
   color: var(--second-title-color);
 }
@@ -820,7 +819,7 @@ ul {
 }
 .modal {
   position: absolute;
-  width: 408px;
+  width: 392px;
   min-height: 576px;
   left: 50%;
   top: 50%;
