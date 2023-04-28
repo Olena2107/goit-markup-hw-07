@@ -381,8 +381,7 @@ ul {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   max-width: 264px;
-  margin-bottom: 72px;
-  /*justify-content: center;*/
+ 
 }
 .team-title {
   margin: 0 auto;
@@ -399,8 +398,7 @@ ul {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  
-  row-gap: 72px;
+    row-gap: 72px;
   justify-content: center;
 }
 .team-main-text {
@@ -480,8 +478,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
-}
+ }
 .customers-item {
   width: 190px;
   height: 88px;
@@ -819,7 +816,7 @@ ul {
 }
 .modal {
   position: absolute;
-  width: 392px;
+  width: calc(100% - 30px);
   min-height: 576px;
   left: 50%;
   top: 50%;
