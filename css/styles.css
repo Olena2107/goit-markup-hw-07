@@ -839,6 +839,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 72px 24px 24px 24px;
+  overflow-y: auto; max-height: 586px; height: 90%;
 }
 .backdrop.is-hidden.modal {
   transform: translate(-50%, -50%) scaleY(0) rotate(-180deg);
