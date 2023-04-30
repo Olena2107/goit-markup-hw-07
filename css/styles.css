@@ -529,7 +529,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px 72px;
+  /*gap: 24px 72px;*/
 }
 .footer-main {
   margin-bottom: 72px;
@@ -621,7 +621,7 @@ ul {
   background-color: #31d0aa;
 }
 .footer-user {
-  width: 100%;
+  /*width: 100%;*/
   text-align: center;
 }
 .footer-user-list {
